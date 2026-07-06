@@ -8,7 +8,7 @@
     <title>Materialize CSS</title>
 </head>
 <body>
-    <header class="">
+    <header class=" ">
     <div class="slider">
         <ul class="slides">
             <li><img class="responsive-img" src="img/car-1.jpg" alt=""></li>
@@ -19,8 +19,31 @@
 
     </header>
 
-    <main>
+    <main class="container">
         <h1>Hello World!</h1>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Non consequuntur odio modi eum, fuga sed quasi. Perspiciatis recusandae sunt modi, quisquam aliquid sed iure ab optio sit excepturi eos, perferendis fugit doloremque quas nostrum alias dolores repellat, deserunt maxime quaerat fuga dignissimos rem. Nostrum quam exercitationem enim at recusandae voluptate ab ipsam amet illo error modi, obcaecati temporibus distinctio, fugit consequuntur inventore eum debitis. Dolorem, voluptatum! Voluptates sed ab tempora illo, praesentium possimus facere quod aspernatur sequi officia quam nisi placeat doloremque eos nesciunt accusamus! Asperiores dolorum, explicabo iste ex eius itaque non officiis, nemo accusamus et, ducimus praesentium totam?</p>
+        <p>I have accepted the <a class="modal-trigger" href="#terms_conditions">terms and conditions</a> of this page</p>
+        <div class="modal" id="terms_conditions">
+            <div class="modal-content">
+                <h4>Terms and Conditions</h4>
+                <ul>
+                    <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Commodi, aperiam.</li>
+                    <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Commodi, aperiam.</li>
+                    <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Commodi, aperiam.</li>
+                    <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Commodi, aperiam.</li>
+                    <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Commodi, aperiam.</li>
+                    <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Commodi, aperiam.</li>
+                    <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Commodi, aperiam.</li>
+                    <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Commodi, aperiam.</li>
+                    <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Commodi, aperiam.</li>
+                    <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Commodi, aperiam.</li>
+                </ul>
+            </div>
+
+            <div class="modal-footer">
+                <button class="btn">I Accept</button>
+            </div>
+        </div>
     </main>
 
     <footer>
@@ -37,10 +60,11 @@
         {
         height: 500,
         indicators: false,
-        duration: 200, //This is for the crossfade between pictures
-        interval: 1000 //This is for the amount of time a picture stays on screen
+        duration: 3000, //This is for the crossfade between pictures
+        interval: 3000 //This is for the amount of time a picture stays on screen
         }
     );
+    $('.modal').modal();
     });
 </script>
 </html>
