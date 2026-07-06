@@ -9,7 +9,14 @@
 </head>
 <body>
     <header class="">
-    
+    <div class="slider">
+        <ul class="slides">
+            <li><img class="responsive-img" src="img/car-1.jpg" alt=""></li>
+            <li><img class="responsive-img" src="img/car-2.jpg" alt=""></li>
+            <li><img class="responsive-img" src="img/car-3.jpg" alt=""></li>
+        </ul>
+    </div>
+
     </header>
 
     <main>
@@ -26,7 +33,11 @@
 <script src="js/materialize.js"></script>
 <script>
     $(document).ready(function(){
-    
+    $('.slider').slider(
+        {
+        height: 500
+        }
+    );
     });
 </script>
 </html>
