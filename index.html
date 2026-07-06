@@ -35,7 +35,10 @@
     $(document).ready(function(){
     $('.slider').slider(
         {
-        height: 500
+        height: 500,
+        indicators: false,
+        duration: 200, //This is for the crossfade between pictures
+        interval: 1000 //This is for the amount of time a picture stays on screen
         }
     );
     });
