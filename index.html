@@ -5,112 +5,78 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/materialize.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <title>Materialize CSS</title>
+    <title>Document</title>
 </head>
-<body>
-    <header class=" ">
-    <div class="slider">
-        <ul class="slides">
-            <li><img class="responsive-img" src="img/car-1.jpg" alt=""></li>
-            <li><img class="responsive-img" src="img/car-2.jpg" alt=""></li>
-            <li><img class="responsive-img" src="img/car-3.jpg" alt=""></li>
-        </ul>
+<body class="container">
+    <h1>Collapsibles</h1>
+    <div class="row">
+        <div class="col s12 m6 l4">
+            <ul class="collapsible popout">
+                <li>
+                    <div class="collapsible-header orange darken-3 white-text">
+                        <i class="material-icons right">expand_more</i>
+                        <span>Click Me!</span>
+                    </div>
+
+                    <div class="collapsible-body">
+                        <img class="responsive-img" src="img/car-1.jpg" alt=""> 
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus labore molestias magnam eos vitae illum. Id omnis ex animi sequi?</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="collapsible-header orange darken-3 white-text">
+                        <i class="material-icons right">expand_more</i>
+                        <span>Click Me!</span>
+                    </div>
+
+                    <div class="collapsible-body">
+                        <img class="responsive-img" src="img/car-1.jpg" alt=""> 
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus labore molestias magnam eos vitae illum. Id omnis ex animi sequi?</p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+
+        <div class="col s12 m6 l4">
+            <ul class="collapsible expandable">
+                <li>
+                    <div class="collapsible-header orange darken-3 white-text">
+                        <i class="material-icons right">expand_more</i>
+                        <span>Click Me!</span>
+                    </div>
+
+                    <div class="collapsible-body">
+                        <img class="responsive-img" src="img/car-2.jpg" alt=""> 
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus labore molestias magnam eos vitae illum. Id omnis ex animi sequi?</p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+
+        <div class="col s12 m6 l4">
+            <ul class="collapsible">
+                <li class="active">
+                    <div class="collapsible-header orange darken-3 white-text">
+                        <i class="material-icons right">expand_more</i>
+                        <span>Click Me!</span>
+                    </div>
+
+                    <div class="collapsible-body">
+                        <img class="responsive-img" src="img/car-3.jpg" alt=""> 
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus labore molestias magnam eos vitae illum. Id omnis ex animi sequi?</p>
+                    </div>
+                </li>
+            </ul>
+        </div>
     </div>
-
-    </header>
-
-    <main class="">
-        <div class="container">
-            <h1>Hello World!</h1>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Non consequuntur odio modi eum, fuga sed quasi. Perspiciatis recusandae sunt modi, quisquam aliquid sed iure ab optio sit excepturi eos, perferendis fugit doloremque quas nostrum alias dolores repellat, deserunt maxime quaerat fuga dignissimos rem. Nostrum quam exercitationem enim at recusandae voluptate ab ipsam amet illo error modi, obcaecati temporibus distinctio, fugit consequuntur inventore eum debitis. Dolorem, voluptatum! Voluptates sed ab tempora illo, praesentium possimus facere quod aspernatur sequi officia quam nisi placeat doloremque eos nesciunt accusamus! Asperiores dolorum, explicabo iste ex eius itaque non officiis, nemo accusamus et, ducimus praesentium totam?</p>
-            <p>I have accepted the <a class="modal-trigger" href="#terms_conditions">terms and conditions</a> of this page</p>
-            <div class="modal" id="terms_conditions">
-                <div class="modal-content">
-                    <h4>Terms and Conditions</h4>
-                    <ul>
-                        <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Commodi, aperiam.</li>
-                        <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Commodi, aperiam.</li>
-                        <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Commodi, aperiam.</li>
-                        <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Commodi, aperiam.</li>
-                        <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Commodi, aperiam.</li>
-                        <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Commodi, aperiam.</li>
-                        <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Commodi, aperiam.</li>
-                        <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Commodi, aperiam.</li>
-                        <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Commodi, aperiam.</li>
-                        <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Commodi, aperiam.</li>
-                    </ul>
-                </div>
-
-                <div class="modal-footer">
-                    <button class="btn">I Accept</button>
-                </div>
-            </div>
-        </div>
-
-        <div class="container">
-            <p>These are our <a class="modal-trigger" href="#cars_id">cars</a></p>
-            <div class="modal" id="cars_id">
-                <div class="modal-content">
-                    <img class="responsive-img" src="img/car-1.jpg" alt=""> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Impedit voluptatum, animi aliquid dolorum aut tempore ad iste non quas minima, eaque sunt odit exercitationem, assumenda consequatur dolorem saepe deserunt at quos repellendus rerum architecto? Tempore nobis autem illum nihil. Aut excepturi deserunt possimus sequi temporibus itaque ducimus quaerat voluptates error!
-                </div>
-            </div>
-        </div>
-
-        <div class="container">
-            <p>This is our <a href="#stocks" class="modal-trigger">stock</a></p>
-            <div class="modal" id="stocks">
-                <p><img class="responsive-img" src="img/car-2.jpg" alt="" id="stocks"> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consectetur, tempora!</p>
-
-                <div class="modal-footer">
-                <button class="btn"> Thank You</button>
-            </div>  
-            </div>
-        </div>
-
-        <div class="container">
-            <p>This is our <a class="modal-trigger" href="#content"> content</a></p>
-            <div class="modal" id="content">
-                <div class="modal-content">
-                <p><img src="img/car-3.jpg" alt="" class="responsive-img">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero non iusto obcaecati id vitae? Laudantium similique sint voluptatum nostrum dolore?</p>
-            </div>
-            </div>
-        </div>
-
-        <div class="container">
-            <p>These are our <a class="modal-trigger" href="#goods">goods</a></p>
-            <div class="modal" id="goods">
-                <div>
-                    <p><img class="responsive-img" src="img/car-1.jpg" alt=""> Lorem ipsum dolor sit amet.</p>
-                </div>
-
-                <div class="modal-footer">
-                    <button class="btn"> Thank you!</button>
-                </div>
-            </div>
-        </div>
-
-
-    </main>
-
-    <footer>
-
-    </footer>
 </body>
 
-<!-- JS Below -->
 <script src="js/jquery.js"></script>
 <script src="js/materialize.js"></script>
 <script>
     $(document).ready(function(){
-    $('.slider').slider(
-        {
-        height: 500,
-        indicators: false,
-        duration: 3000, //This is for the crossfade between pictures
-        interval: 3000 //This is for the amount of time a picture stays on screen
-        }
-    );
-    $('.modal').modal();
+        $('.collapsible').collapsible()
+
     });
 </script>
 </html>
