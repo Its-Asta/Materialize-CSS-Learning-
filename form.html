@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/materialize.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Yuyu&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+
+<style>
+    .yuyu-regular {
+    font-family: "Yuyu", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+</style>
+<body>
+    <div class="container">
+        <h1>Header</h1>
+    
+        <div class="row">
+            <form class="col s12">
+                <div class="row">
+                <div class="input-field col s6">
+                    <input placeholder="Placeholder" id="first_name" type="text" class="validate">
+                    <label for="first_name">First Name</label>
+                </div>
+                <div class="input-field col s6">
+                    <input id="last_name" type="text" class="validate">
+                    <label for="last_name">Last Name</label>
+                </div>
+                </div>
+                <div class="row">
+                <div class="input-field col s12">
+                    <input disabled value="I am not editable" id="disabled" type="text" class="validate">
+                    <label for="disabled">Disabled</label>
+                </div>
+                </div>
+                <div class="row">
+                <div class="input-field col s12">
+                    <input id="password" type="password" class="validate">
+                    <label for="password">Password</label>
+                </div>
+                </div>
+                <div class="row">
+                <div class="input-field col s12">
+                    <input id="email" type="email" class="validate">
+                    <label for="email">Email</label>
+                </div>
+                </div>
+                <div class="row">
+                    <div class="col s12">
+                        This is an inline input field:
+                        <div class="input-field inline">
+                        <input id="email_inline" type="email" class="validate">
+                        <label for="email_inline">Email</label>
+                        <span class="helper-text" data-error="wrong" data-success="right">Helper text</span>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+
+        <div class="row">
+            <div class="col s12 m6 l6">
+                <img class="responsive-img" src="img/car-1.jpg" alt="">
+            </div>
+
+            <div class="col m1 l1"></div>
+
+            <div class="col s12 m5 l5">
+                <h4>Login To Your Account</h4>
+                
+                <form>
+                    <div class="input-field col s12">
+                        <input placeholder="Username" id="user_name" type="text" class="validate">
+                        <label for="user_name">User Name</label>
+                    </div>
+
+                    <div class="input-field col s12">
+                        <input id="password" type="password" placeholder="Passsword" class="validate">
+                        <label for="password">Password</label>
+                    </div>
+
+                    <button class="btn btn-flat blue darken-4 btn-large"><a class="white-text" href="">Log In</a></button>
+
+                    <p class="center-align"><a href="">Forgot Password?</a></p>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+<script src="js/jquery.js"></script>
+<script src="js/materialize.js"></script>
+</html>
